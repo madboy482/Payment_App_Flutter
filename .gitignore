@@ -1,0 +1,391 @@
+# ========================
+# PAYMENT DASHBOARD SYSTEM
+# Comprehensive .gitignore
+# ========================
+
+# =====================
+# ENVIRONMENT VARIABLES
+# =====================
+.env
+.env.local
+.env.production
+.env.development
+.env.staging
+**/.env
+**/.env.*
+
+# =====================
+# SENSITIVE DATA
+# =====================
+# Database credentials
+config/database.yml
+config/secrets.yml
+
+# API Keys and tokens
+api-keys.json
+secrets.json
+auth-config.json
+
+# Private keys
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# =====================
+# NODE.JS (BACKEND)
+# =====================
+
+# Dependencies
+backend/node_modules/
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+backend/lerna-debug.log*
+
+# Runtime data
+backend/pids/
+backend/*.pid
+backend/*.seed
+backend/*.pid.lock
+
+# Coverage directory used by tools like istanbul
+backend/coverage/
+backend/.nyc_output
+
+# Build outputs
+backend/dist/
+backend/build/
+backend/lib/
+backend/.next
+backend/out/
+
+# Logs
+backend/logs/
+backend/*.log
+
+# Runtime data
+backend/.npm
+backend/.eslintcache
+
+# Optional npm cache directory
+backend/.npm
+
+# Optional REPL history
+backend/.node_repl_history
+
+# Output of 'npm pack'
+backend/*.tgz
+
+# Yarn Integrity file
+backend/.yarn-integrity
+
+# parcel-bundler cache
+backend/.cache
+backend/.parcel-cache
+
+# =====================
+# FLUTTER (FRONTEND)
+# =====================
+
+# Generated files
+frontend/.dart_tool/
+frontend/.flutter-plugins
+frontend/.flutter-plugins-dependencies
+frontend/.packages
+frontend/.pub-cache/
+frontend/.pub/
+frontend/build/
+frontend/ios/Pods/
+frontend/ios/.symlinks/
+frontend/android/.gradle/
+frontend/android/captures/
+frontend/android/gradlew
+frontend/android/gradlew.bat
+frontend/android/local.properties
+frontend/android/app/outputs/
+frontend/android/key.properties
+
+# Flutter/Dart/Pub related
+frontend/pubspec.lock
+frontend/.metadata
+
+# Android related
+frontend/android/**/gradle-wrapper.jar
+frontend/android/.gradle
+frontend/android/captures/
+frontend/android/gradlew
+frontend/android/gradlew.bat
+frontend/android/local.properties
+frontend/android/**/GeneratedPluginRegistrant.java
+frontend/android/key.properties
+frontend/android/app/google-services.json
+
+# iOS related
+frontend/ios/**/*.mode1v3
+frontend/ios/**/*.mode2v3
+frontend/ios/**/*.moved-aside
+frontend/ios/**/*.pbxuser
+frontend/ios/**/*.perspectivev3
+frontend/ios/**/*sync/
+frontend/ios/**/.sconsign.dblite
+frontend/ios/**/.tags*
+frontend/ios/**/.vagrant/
+frontend/ios/**/DerivedData/
+frontend/ios/**/Icon?
+frontend/ios/**/Pods/
+frontend/ios/**/.symlinks/
+frontend/ios/**/profile
+frontend/ios/**/xcuserdata
+frontend/ios/.generated/
+frontend/ios/Flutter/App.framework
+frontend/ios/Flutter/Flutter.framework
+frontend/ios/Flutter/Flutter.podspec
+frontend/ios/Flutter/Generated.xcconfig
+frontend/ios/Flutter/app.flx
+frontend/ios/Flutter/app.zip
+frontend/ios/Flutter/flutter_assets/
+frontend/ios/Flutter/flutter_export_environment.sh
+frontend/ios/ServiceDefinitions.json
+frontend/ios/Runner/GeneratedPluginRegistrant.*
+
+# Web related
+frontend/web/flutter_service_worker.js
+frontend/web/manifest.json
+
+# =====================
+# IDE AND EDITORS
+# =====================
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Android Studio
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+
+# Eclipse
+.apt_generated/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =====================
+# OPERATING SYSTEMS
+# =====================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =====================
+# DATABASE
+# =====================
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# MongoDB
+dump/
+*.bson
+
+# =====================
+# LOGS AND DEBUGGING
+# =====================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# =====================
+# TEMPORARY FILES
+# =====================
+tmp/
+temp/
+.tmp/
+.temp/
+
+# =====================
+# ARCHIVES
+# =====================
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# =====================
+# TESTING
+# =====================
+coverage/
+.nyc_output/
+test-results/
+screenshots/
+
+# =====================
+# DEPENDENCY DIRECTORIES
+# =====================
+node_modules/
+jspm_packages/
+
+# =====================
+# DEPLOYMENT
+# =====================
+.vercel
+.netlify
+.firebase/
+.firebaserc
+firebase.json
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+docker-compose.yaml
+
+# =====================
+# MISCELLANEOUS
+# =====================
+.sass-cache/
+.connect.lock
+.lock-wscript
+.grunt
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp
+
+# =====================
+# PROJECT SPECIFIC
+# =====================
+# Screenshots (but keep example screenshots)
+screenshots/
+!screenshots/demo-*.png
+!screenshots/example-*.png
+
+# Documentation builds
+docs/build/
+
+# Backup files
+*.backup
+*.bak
+*.swp
+*.orig
+
+# =====================
+# PACKAGE MANAGERS
+# =====================
+.pnp
+.pnp.js
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+
+ios/
+linux/
+windows/
+macos/
+
+
+# =====================
+# END OF GITIGNORE
+# =====================
