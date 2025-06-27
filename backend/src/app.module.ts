@@ -6,6 +6,7 @@ import { UsersModule } from './users/users.module';
 import { PaymentsModule } from './payments/payments.module';
 import { UsersService } from './users/users.service';
 import { PaymentsService } from './payments/payments.service';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { PaymentsService } from './payments/payments.service';
     UsersModule,
     PaymentsModule,
   ],
+  controllers: [AppController],
 })
 export class AppModule implements OnModuleInit {
   constructor(

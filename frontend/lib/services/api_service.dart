@@ -13,10 +13,10 @@ class ApiService {
   // Use different base URLs for web vs mobile
   static String get baseUrl {
     if (kIsWeb) {
-      return 'http://localhost:3000';
+      return 'https://payment-app-flutter.onrender.com';
     } else {
-      // For mobile, use your computer's IP address
-      return 'http://192.168.1.42:3000'; // Your computer's IP address
+      // For mobile, use the production URL too
+      return 'https://payment-app-flutter.onrender.com';
     }
   }
   
