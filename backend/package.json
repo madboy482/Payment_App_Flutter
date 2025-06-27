@@ -4,9 +4,9 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
-    "start": "node dist/main",
+    "start": "node dist/main.js",
     "start:dev": "nodemon --watch src --ext ts --exec ts-node src/main.ts",
-    "start:prod": "node dist/main",
+    "start:prod": "node dist/main.js",
     "test": "echo \"No tests specified yet\""
   },
   "keywords": [],
